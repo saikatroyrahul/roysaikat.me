@@ -820,6 +820,13 @@ footer .copyright a {
 
 
 
+/* Remove blue focus outline when touching elements on mobile */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* For iOS Safari and other WebKit browsers */
+}
 
+:focus {
+    outline: none; /* Remove outline on focus (especially for mobile browsers) */
+}
 
 
