@@ -820,13 +820,25 @@ footer .copyright a {
 
 
 
-/* Remove blue focus outline when touching elements on mobile */
+/* Remove tap highlight color for all elements */
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* For iOS Safari and other WebKit browsers */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Make tap highlight fully transparent */
 }
 
-:focus {
-    outline: none; /* Remove outline on focus (especially for mobile browsers) */
+/* Specifically target input, textarea, button, select, and anchor (link) elements */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Transparent tap highlight */
+}
+
+/* Remove the focus outline for links */
+a:focus,
+a:visited,
+a:active {
+    outline: none; /* No outline on focus */
 }
 
 
