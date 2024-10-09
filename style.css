@@ -710,6 +710,21 @@ section {
 }
 
 
+/* Remove number input arrows in Chrome, Safari, Edge, and Opera */
+.contact form .input-box input[type="number"]::-webkit-outer-spin-button,
+.contact form .input-box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number input arrows in Firefox */
+.contact form .input-box input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+
 
 .footer {
   background-color: var(--second-bg-color);
